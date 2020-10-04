@@ -5,6 +5,7 @@
  */
 package GUIs;
 
+//import statements below
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -95,11 +96,13 @@ public class Frame2 extends JFrame implements ActionListener, ItemListener {
 
     }
 
+    //main method
     public static void main(String args[]) throws Exception {
         new Frame2().setVisible(true);
     }
 
     @Override
+    //method call
     public void actionPerformed(ActionEvent e) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 
@@ -144,7 +147,9 @@ public class Frame2 extends JFrame implements ActionListener, ItemListener {
             colourPanel.setBackground(Color.BLACK);
         } else if ((greenCheck.isSelected()) & (redCheck.isSelected())
                 || (greenCheck.isSelected()) & (amberCheck.isSelected())
-                || (redCheck.isSelected()) & (amberCheck.isSelected())) {
+                || (redCheck.isSelected()) & (amberCheck.isSelected())) 
+        //or operators
+        {
             colourPanel.setBackground(Color.GRAY);
 
         }
